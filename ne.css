@@ -1,0 +1,33 @@
+h1,h2{
+	width:50px;
+	min-width:350px;
+	padding:12px;
+	margin:auto;
+	text-align:justify;
+}
+p{
+	margin:auto;
+	width:50px;
+	text-align:justify;
+	min-width:350px;
+	padding:12px;
+}
+body
+{
+	background-color: rgb(140,140,255);
+}
+
+$cd-btn: #011c37;
+$cd-txt: #15DEA5;
+.btn {
+    background: $cd-btn;
+    color: $cd-txt;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 1.85rem 3rem;
+    border-radius: 10rem;
+    transform: scale(1);
+    &:hover {
+        transform: scale(1.15);
+    }
+}

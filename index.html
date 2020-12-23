@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet"href="ne.css">
+		<title>votre délèguer de class preferer cette a dire ejh</title>
+	</head>
+		<body>
+		<h1>ses moi <a href="evniew1.html">ejh<a> de la class des 3A voter pour Moi</h1>
+			
+		<p class="introduction">voter pour moi
+			<div class="ent">
+		</p><p>pourquoi voter pour moi et pas tt je tien a preserver son e
+		anonyma</p> 
+			<h3 class="btn">
+			voter pour moi
+			</h3>
+		
+
+	
+		<p>j'ai esayer d'être marrant lors de l'un de mon discour
+		malgrée que </br>je detest le manque de serieux sinon je vous souhaite de vous amusez</br>
+		que ceux qui ont lu mon site me dit "mgn"  en me voyant</p>
+		</div>
+		<h2>
+			voici les jeux que je vous offre
+		</h2>
+		
+		<button>pierre</button>
+		<button>feuille</button>
+		<button>ciseaux</button>
+		<div class="resultat"></div>
+		<script>
+		const buttons = document.querySelectorAll("button");
+		for (let i = 0;i <buttons.length;i++){
+		buttons[i].addEventListener("click",function(){
+		const joueur = buttons[i].innerHTML
+		const robot = buttons[Math.floor(Math.random()*buttons.length)].innerHTML;
+		let resultat = "";
+		//la logique
+		if (joueur===robot){
+		resultat = "Egalité";
+		}
+		else if((joueur==="pierre"&& robot === "ciseaux")||(joueur 
+		==="feuille"&&robot==="pierre")||(joueur==="ciseaux"&&robot==="feuille")){
+		resultat="gagner";
+		}
+		else{
+		resultat="Perdu";
+		}
+		document.querySelector(".resultat").innerHTML=`joueur:${joueur}</br> 
+		Robot:${robot}</br>
+		${resultat}
+		`;
+		
+		});
+		}
+		</script>
+		</body>
+</html>
